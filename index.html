@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tak Macaron Landing page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+	
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			// nice Scroll
+			function niceScroll(id){
+	            $([document.documentElement, document.body]).animate({
+	                scrollTop: $("#"+id).offset().top
+	            }, 1000);
+			}
+
+
+			$('.js__header-link').click(function(e){
+	            e.preventDefault();
+	            var sectionWrapper = $(this).attr('data-attr')
+				niceScroll(sectionWrapper);
+			});
+
+		});
+	</script>	
+</body>
+</html>
